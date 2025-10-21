@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+   <title>MH日本語</title>
+   <meta charset="UTF-8"/>
+   <link rel="icon" type="image/x-icon" href="image/favicon.png">
+   <link href="./css/dropdownmenu.css" rel="stylesheet" type="text/css"/>
+   <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+   <script src="./js/jquery.min.js"></script>  
+</head>
+<body>
+   <div id="includeHtml"></div>
+   <div id="repousse2">
+      <div id="info"><p>画面の左上のそれぞれのクラスをクリックすると練習したい項目が選べられます。</p></div>
+      <div id="info"><p>「AJMMC 803 CLASS」の授業で教えた言葉で作成した練習です。</p></div>
+      <div class="inmageArea"><img class="image" src="image/yomi.jpg"></div>
+      <div class="inmageArea"><img class="image" src="image/sentaku.jpg"></div>
+      <div class="inmageArea"><img class="image" src="image/goisetsumei.png"></div>
+   </div>
+   <!-- <script>
+      $(function() {
+         $("#includeHtml").load("menubar.html");
+      });
+   </script> -->
+   <!-- Using get method -->
+   <script>
+      $(function() {
+         $.get('menubar.html', appndHtml);
+         function appndHtml(data) {
+            $("#includeHtml").prepend(data);
+         }         
+      });
+   </script>   
+</body>
+</html>

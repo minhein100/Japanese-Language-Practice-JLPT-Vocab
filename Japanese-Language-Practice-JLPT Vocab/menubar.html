@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/lesson_list.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/dropdownmenu.css" rel="stylesheet" type="text/css"/>
+        <script src="./js/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="repousse">
+            <div class="navbar">
+                <!-- <a href="index.html">Home</a> -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction1()">N1 Class</button>
+                    <div class="dropdown-content" id="myDropdown1">
+                        <a href="n1_imi_lesson.html">語彙の説明</a>
+                        <a href="n1_yomikata_lesson.html">読み方練習</a>
+                        <a href="n1_multi_lesson.html">選択肢問題</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction2()">N2 Class</button>
+                    <div class="dropdown-content" id="myDropdown2">
+                        <a href="n2_imi_lesson.html">語彙の説明</a>
+                        <a href="n2_yomikata_lesson.html">読み方練習</a>
+                        <a href="n2_multi_lesson.html">選択肢問題</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction3()">N3 Class</button>
+                    <div class="dropdown-content" id="myDropdown3">
+                        <a href="n3_imi_lesson.html">語彙の説明</a>
+                        <a href="n3_yomikata_lesson.html">読み方練習</a>
+                        <a href="n3_multi_lesson.html">選択肢問題</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+                document.getElementById("myDropdown1").classList.toggle("show");
+                var myDropdown1 = document.getElementById("myDropdown1");
+                if (myDropdown2.classList.contains('show')) {
+                        myDropdown2.classList.remove('show');
+                }else if(myDropdown3.classList.contains('show')) {
+                        myDropdown3.classList.remove('show');
+                }
+            }
+
+            function myFunction2() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+                var myDropdown2 = document.getElementById("myDropdown2");
+                if (myDropdown1.classList.contains('show')) {
+                        myDropdown1.classList.remove('show');
+                }else if(myDropdown3.classList.contains('show')) {
+                        myDropdown3.classList.remove('show');
+                }
+            }
+
+            function myFunction3() {
+                document.getElementById("myDropdown3").classList.toggle("show");
+                var myDropdown3 = document.getElementById("myDropdown3");
+                if (myDropdown1.classList.contains('show')) {
+                        myDropdown1.classList.remove('show');
+                }else if(myDropdown2.classList.contains('show')) {
+                        myDropdown2.classList.remove('show');
+                }
+            }
+
+            /* Close the dropdown if the user clicks outside of it */
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown1 = document.getElementById("myDropdown1");
+                    var myDropdown2 = document.getElementById("myDropdown2");
+                    var myDropdown3 = document.getElementById("myDropdown3");
+                    if (myDropdown1.classList.contains('show')) {
+                        myDropdown1.classList.remove('show');
+                    }else if (myDropdown2.classList.contains('show')) {
+                        myDropdown2.classList.remove('show');
+                    }else {
+                        myDropdown3.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
