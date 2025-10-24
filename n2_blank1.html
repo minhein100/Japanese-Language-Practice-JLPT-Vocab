@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>N2穴埋め問題-001</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="./css/dropdownmenu.css" rel="stylesheet" type="text/css" />
+    <link href="./css/multiple_choice.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style-blank.css">
+</head>
+<body>
+    <div class="container">
+        <div id="includeHtml"></div>
+        <h3>次の文のボックスに入る言葉として適当なものを選びなさい。</h3>
+
+        <div id="answerBox" class="answer-box">
+        </div>
+
+        <div id="quizQuestions" class="quiz-questions">
+            <h2>N2穴埋め問題-001</h2>
+            <div id="questions" class="question"></div>
+        </div>
+
+        <button id="submitBtn">答えを提出する</button>
+        <button id="restartBtn">最初からやり直す</button>
+        <button id="changeCourseBtn"><a href="n2_blank_lesson.html" style="text-decoration:none;">他の問題を選ぶ</a></button>
+        <div id="results" class="results-area"></div>
+    </div>
+
+    <script src="js/n2-blank1.js"></script>
+    <script>
+     // Ensure the script runs after the DOM is ready (which $() does)
+     $(function () {
+        $.get('menubar.html', appndHtml);
+        function appndHtml(data) {
+             // The .prepend() method will insert the menubar HTML inside the includeHtml div
+             $("#includeHtml").prepend(data);
+        }
+     });
+    </script>
+</body>
+</html>

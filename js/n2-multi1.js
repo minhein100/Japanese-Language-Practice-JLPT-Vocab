@@ -51,7 +51,7 @@ const quizData = [
     },
   ];
 
-  const questionElement = document.getElementById("question");
+const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 let currentQuestion = 0;
 let score = 0;
@@ -153,18 +153,18 @@ function showResult() {
     if (score === totalQuestions) { // Perfect Score (100%)
         multiChoiceArea.innerHTML = `
             <h1>　Test Completed!</h1>
-            <p style="font-size:30px;">　スコア: ${score}/${totalQuestions}</p>
-            <p style="font-size:20px; font-weight:bold;">　　おめでとう！よくできました！</p>`;
+            <p style="font-size:30px; color:green;">　スコア: ${score}/${totalQuestions}</p>
+            <p style="font-size:20px; color:green; font-weight:bold;">　　おめでとう！よくできました！</p>`;
     } else if (score >= score_80_percent) { // High Score (80% to <100%)
         multiChoiceArea.innerHTML = `
             <h1>　Test Completed!</h1>
-            <p style="font-size:30px; color:green;">　スコア: ${score}/${totalQuestions}</p>
-            <p style="font-size:20px; color:green; font-weight:bold;">　すごい！満点を目指しましょう！</p>`;
+            <p style="font-size:30px; color:yellow;">　スコア: ${score}/${totalQuestions}</p>
+            <p style="font-size:20px; color:yellow; font-weight:bold;">　すごい！満点を目指しましょう！</p>`;
     } else if (score >= score_50_percent && score < score_80_percent) { // Mid Score (50% to <80%)
         multiChoiceArea.innerHTML = `
             <h1>　Test Completed!</h1>
-            <p style="font-size:30px; color:green;">　スコア: ${score}/${totalQuestions}</p>
-            <p style="font-size:20px; color:green; font-weight:bold;">　　もう少し頑張りましょう！</p>`;
+            <p style="font-size:30px; color:orange;">　スコア: ${score}/${totalQuestions}</p>
+            <p style="font-size:20px; color:orange; font-weight:bold;">　　もう少し頑張りましょう！</p>`;
     } else if (score >= 0 && score < score_50_percent) { // Low Score (0% to <50%)
         multiChoiceArea.innerHTML = `
             <h1>　Test Completed!</h1>

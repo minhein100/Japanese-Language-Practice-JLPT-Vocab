@@ -17,9 +17,9 @@ $(document).ready(function () {
 
 
 	function beginActivity() {
-		$("#menubtn").append('<div><span style="font-size:18px;font-weight:bold;color:red;background-color:yellow;cursor:pointer">語彙一覧</span></div>');
+		$("#menubtn").append('<div><span style="font-size:18px;cursor:pointer">語彙一覧</span></div>');
 		$("#closebtn").append('<div><a href="javascript:void(0)" class="closebtn">&times;</a></div>');
-		$("#infoMsg").append('<div><h5 style="text-align: center;">「語彙一覧」をクリックすると言葉の選択ができます。</h5></div>');
+		$("#infoMsg").append('<div><h4 style="text-align: center;">画面左の「語彙一覧」から言葉の選択ができます。</h4></div>');
 		$(vocabbank).each(function(i , item) {
 			$("#sideMenuArea" + i ).append('<div id="sideMenuList">' + item[0] + '</div>');
 			$("#sideMenuArea" + i ).on("click", function () {
@@ -109,4 +109,3 @@ $(document).ready(function () {
 		}
 	};
 });
-

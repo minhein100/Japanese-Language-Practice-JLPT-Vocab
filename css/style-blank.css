@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #d8d8d8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 30px;
+}
+
+/* Answer Box Styling */
+.answer-box {
+    background-color: #e9ecef;
+    border: 2px dashed #ccc;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    min-height: 80px;
+}
+
+.answer-box h2 {
+    margin-top: 0;
+    color: #6c757d;
+    font-size: 1.1em;
+}
+
+/* Draggable Item Styling */
+.draggable {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: grab;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+/* Blank Styling */
+.blank {
+    display: inline-block;
+    min-width: 120px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 26px;
+    color: #333;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Question Styling */
+.quiz-questions p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Submit Button */
+#submitBtn, #restartBtn, #changeCourseBtn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submitBtn:hover {
+    background-color: #218838;
+}
+
+/* Results Area */
+.results-area {
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Feedback Colors */
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
