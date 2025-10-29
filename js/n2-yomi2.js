@@ -1,21 +1,22 @@
 $(document).ready(function () {
 
-    var colorArray = ["#019875", "#1E8BC3", "#74B72E"];
-    var cardState;
-    var currentQuestion = 0;
-    var qbank = [
-        ["錯覚", "さっかく"],
-        ["往復", "おうふく"],
-        ["装置", "そうち"],
-        ["郊外", "こうがい"],
-        ["尊敬", "そんけい"],
-        ["偏見", "へんけん"],
-        ["貢献", "こうけん"],
-        ["懸命", "けんめい"],
-        ["朗読", "ろうどく"],
-        ["眺望", "ちょうぼう"]];
+	var colorArray = ["#019875", "#1E8BC3", "#74B72E"];
+	var cardState;
+	var currentQuestion = 0;
+	var qbank = [
+		["閑散", "かんさん"],
+		["頻繁", "ひんぱん"],
+		["携わる", "たずさわる"],
+		["奔走", "ほんそう"],
+		["阻害", "そがい"],
+		["潤沢", "じゅんたく"],
+		["窮屈", "きゅうくつ"],
+		["懸賞", "けんしょう"],
+		["沈殿", "ちんでん"],
+		["耐久", "たいきゅう"]];
 
-    // ★追加: 最初に表示するカード (0: card1/問題, 1: card2/答え)
+
+	// ★追加: 最初に表示するカード (0: card1/問題, 1: card2/答え)
     var firstCard = 0;
     // ★追加: 表示順序 ('noRandom' or 'random')
     var displayOrder = 'noRandom';
@@ -138,7 +139,7 @@ $(document).ready(function () {
         $("#buttonArea").empty();
         $("#buttonArea").append('<div id="nextButton">次へ</div>');
         // '他の練習を選ぶ'のリンクは元のままとします
-        $("#buttonArea").append('<div id="otherButton"> <a href="./n3_yomikata_lesson.html" style="text-decoration:none;">他の練習を選ぶ</a></div>');
+        $("#buttonArea").append('<div id="otherButton"> <a href="./n2_yomikata_lesson.html" style="text-decoration:none;">他の練習を選ぶ</a></div>');
 
         $("#nextButton").on("click", function () {
             // if (currentQuestion < qbank.length) {
@@ -169,9 +170,8 @@ $(document).ready(function () {
         $("#buttonArea").empty();
         $("#cardArea").empty();
         $("#cardArea").append('<div id="finalMessage"><p>終了！<br>よく頑張りました！<br>問題に挑戦しましょう！</p></div>');
-        // ★修正: リンク先をn3_yomi1.htmlとn3_yomikata_lesson.htmlに修正しました
-        $("#buttonArea").append('<div id="otherButton"> <a href="./n3_yomi1.html" style="text-decoration:none;">最初からやり直す</a></div>');
-        $("#buttonArea").append('<div id="otherButton"> <a href="./n3_yomikata_lesson.html" style="text-decoration:none;">他の練習を選ぶ</a></div>');
+        $("#buttonArea").append('<div id="otherButton"> <a href="./n2_yomi2.html" style="text-decoration:none;">最初からやり直す</a></div>');
+        $("#buttonArea").append('<div id="otherButton"> <a href="./n2_yomikata_lesson.html" style="text-decoration:none;">他の練習を選ぶ</a></div>');
     }
 
 });

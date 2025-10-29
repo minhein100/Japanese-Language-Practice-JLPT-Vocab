@@ -1,21 +1,22 @@
 $(document).ready(function () {
 
-    var colorArray = ["#019875", "#1E8BC3", "#74B72E"];
-    var cardState;
-    var currentQuestion = 0;
-    var qbank = [
-        ["錯覚", "さっかく"],
-        ["往復", "おうふく"],
-        ["装置", "そうち"],
-        ["郊外", "こうがい"],
-        ["尊敬", "そんけい"],
-        ["偏見", "へんけん"],
-        ["貢献", "こうけん"],
-        ["懸命", "けんめい"],
-        ["朗読", "ろうどく"],
-        ["眺望", "ちょうぼう"]];
+	var colorArray = ["#019875", "#1E8BC3", "#74B72E"];
+	var cardState;
+	var currentQuestion = 0;
+	var qbank = [
+		["沿岸", "えんがん"],
+		["観測", "かんそく"],
+		["縮小", "しゅくしょう"],
+		["妥当", "だとう"],
+		["彫刻", "ちょうこく"],
+		["負傷", "ふしょう"],
+		["保管", "ほかん"],
+		["漁業", "ぎょぎょう"],
+		["隔週", "かくしゅう"],
+		["執筆", "しっぴつ"]];
 
-    // ★追加: 最初に表示するカード (0: card1/問題, 1: card2/答え)
+
+	// ★追加: 最初に表示するカード (0: card1/問題, 1: card2/答え)
     var firstCard = 0;
     // ★追加: 表示順序 ('noRandom' or 'random')
     var displayOrder = 'noRandom';
@@ -170,7 +171,7 @@ $(document).ready(function () {
         $("#cardArea").empty();
         $("#cardArea").append('<div id="finalMessage"><p>終了！<br>よく頑張りました！<br>問題に挑戦しましょう！</p></div>');
         // ★修正: リンク先をn3_yomi1.htmlとn3_yomikata_lesson.htmlに修正しました
-        $("#buttonArea").append('<div id="otherButton"> <a href="./n3_yomi1.html" style="text-decoration:none;">最初からやり直す</a></div>');
+        $("#buttonArea").append('<div id="otherButton"> <a href="./n3_yomi2.html" style="text-decoration:none;">最初からやり直す</a></div>');
         $("#buttonArea").append('<div id="otherButton"> <a href="./n3_yomikata_lesson.html" style="text-decoration:none;">他の練習を選ぶ</a></div>');
     }
 
