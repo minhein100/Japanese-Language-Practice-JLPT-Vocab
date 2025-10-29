@@ -443,4 +443,16 @@ li a:hover {
     width: 70%;
 }
 
+.randomCard, .cardOrderSelect, .displayOrderSelect {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: black;
+  margin-top: 4px;
+  margin-bottom: 0;
+  /* background-color: beige; */
+}
 
