@@ -76,8 +76,9 @@ $(document).ready(function () {
 		$("#buttonArea").empty();
 		$("#cardArea").empty();
 		$("#cardArea").append('<div id="finalMessage"><p>終了！<br>よく頑張りました！<br>問題に挑戦しましょう！</p></div>');
-		$("#buttonArea").append('<div id="otherButton"> <a href=\"./n1_yomi1.html\" style="text-decoration:none;">最初からやり直す</a></div>');
-		$("#buttonArea").append('<div id="otherButton"> <a href=\"./n1_yomikata_lesson.html\" style="text-decoration:none;">他の練習を選ぶ</a></div>');
+		$("#buttonArea").append('<div id="otherButton"> <a href=\"./n3_yomi1.html\" style="text-decoration:none;">最初からやり直す</a></div>');
+		$("#buttonArea").append('<div id="otherButton"> <a href=\"./n3_yomikata_lesson.html\" style="text-decoration:none;">他の練習を選ぶ</a></div>');
 	}//final message
 
 });
+
