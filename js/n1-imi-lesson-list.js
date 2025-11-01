@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $("#lessonListArea1")
     .append('<div id="lessonListButton6"><a href=\"./n1_imi1.html\" style="text-decoration:none;">０１</a></div>');
-    // $("#lessonListArea1")
-    // .append('<div id="lessonListButton6"><a href=\"./n1_multi2.html\" style="text-decoration:none;">０２</a></div>');
+    $("#lessonListArea1")
+    .append('<div id="lessonListButton6"><a href=\"./n1_imi2.html\" style="text-decoration:none;">０２</a></div>');
     //$("#lessonListArea1")
     //.append('<div id="lessonListButton6"><a href=\"./n1_imi3.html\" style="text-decoration:none;">０３</a></div>');
     //$("#lessonListArea1")
@@ -24,3 +24,4 @@ $(document).ready(function () {
     // $("#lessonListArea1")
     // .append('<div id="lessonListButton"><a href=\"830class.html\" style="text-decoration:none;">１２</a></div>');
 });
+
